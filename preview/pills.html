@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="../colors_and_type.css"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  body { padding: 24px; background: var(--bg); font-family: var(--font-sans); }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: var(--pink-200); color: var(--ink-900); font-size: 13px; font-weight: 500; }
+  .pill.chip { background: var(--cream-50); color: var(--fg); border: 1px solid var(--hairline); padding: 8px 14px; font-weight: 500; }
+  .pill.chip.active { background: var(--terra-500); color: var(--cream-50); border-color: var(--terra-500); }
+  .label { font-size: 10px; color: var(--fg-muted); font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 6px; display:block; margin-top: 12px; }
+  .label:first-child { margin-top: 0; }
+</style>
+</head>
+<body>
+<span class="label">Ingredient pills</span>
+<div class="row">
+  <span class="pill">Strawberry</span>
+  <span class="pill">Fresh cream</span>
+  <span class="pill">French butter</span>
+  <span class="pill">Almond</span>
+</div>
+<span class="label">Filter chips</span>
+<div class="row">
+  <span class="pill chip active">All pastries</span>
+  <span class="pill chip">Cakes</span>
+  <span class="pill chip">Macarons</span>
+  <span class="pill chip">Tarts</span>
+  <span class="pill chip">Croissants</span>
+</div>
+</body>
+</html>

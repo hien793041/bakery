@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="../colors_and_type.css"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { padding: 24px; background: var(--bg); }
+  .row { display: flex; gap: 12px; }
+  .swatch { flex: 1; border-radius: var(--r-md); padding: 14px; min-height: 96px; display: flex; flex-direction: column; justify-content: space-between; font-family: var(--font-sans); border: 1px solid var(--hairline); }
+  .name { font-weight: 600; font-size: 13px; }
+  .hex { font-family: var(--font-mono); font-size: 11px; opacity: .8; }
+  .label { font-size: 11px; text-transform: uppercase; letter-spacing: .12em; color: var(--fg-muted); margin-bottom: 4px; font-family: var(--font-sans); }
+</style>
+</head>
+<body>
+<div>
+  <div class="label">Terracotta · đỏ đất · 10% of surface (CTAs, prices, ribbon)</div>
+  <div class="row">
+    <div class="swatch" style="background:#D9796A; color:#fff"><span class="name">terra-300</span><span class="hex">#D9796A</span></div>
+    <div class="swatch" style="background:#CA5A49; color:#fff"><span class="name">terra-400</span><span class="hex">#CA5A49</span></div>
+    <div class="swatch" style="background:#B84A39; color:#fff"><span class="name">terra-500 · accent</span><span class="hex">#B84A39</span></div>
+    <div class="swatch" style="background:#9A3B2D; color:#fff"><span class="name">terra-600 · hover</span><span class="hex">#9A3B2D</span></div>
+    <div class="swatch" style="background:#7C2E23; color:#fff"><span class="name">terra-700 · press</span><span class="hex">#7C2E23</span></div>
+  </div>
+</div>
+</body>
+</html>

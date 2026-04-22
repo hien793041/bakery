@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="../colors_and_type.css"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  body { padding: 28px; background: var(--bg); font-family: var(--font-sans); }
+  .row { display: flex; gap: 24px; align-items: center; }
+  .swatch { background: var(--pink-200); border: 1px solid var(--hairline); width: 80px; height: 60px; display: flex; align-items: center; justify-content: center; color: var(--fg); font-weight: 600; }
+  .label { font-size: 11px; font-weight: 600; color: var(--fg); text-align: center; margin-top: 8px; }
+  .spec { font-family: var(--font-mono); font-size: 10px; color: var(--fg-muted); text-align: center; }
+  .stop { display: flex; flex-direction: column; align-items: center; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="stop"><div class="swatch" style="border-radius: 8px"></div><div class="label">r-sm</div><div class="spec">8px · pills</div></div>
+  <div class="stop"><div class="swatch" style="border-radius: 14px"></div><div class="label">r-md</div><div class="spec">14px · buttons</div></div>
+  <div class="stop"><div class="swatch" style="border-radius: 20px"></div><div class="label">r-lg</div><div class="spec">20px · cards</div></div>
+  <div class="stop"><div class="swatch" style="border-radius: 28px"></div><div class="label">r-xl</div><div class="spec">28px · drawers</div></div>
+  <div class="stop"><div class="swatch" style="border-radius: 999px; width:60px"></div><div class="label">r-full</div><div class="spec">round</div></div>
+</div>
+</body>
+</html>

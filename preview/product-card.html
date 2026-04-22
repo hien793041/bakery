@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="../colors_and_type.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  body { padding: 24px; background: var(--bg); font-family: var(--font-sans); display: flex; justify-content: center; }
+  .card { width: 220px; background: var(--cream-50); border-radius: var(--r-lg); box-shadow: var(--shadow-md); padding: 16px; position: relative; transition: all .26s var(--ease); }
+  .card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+  .disc { width: 160px; height: 160px; border-radius: 999px; background: var(--pink-200); margin: -36px auto 12px; display: flex; align-items: center; justify-content: center; }
+  .disc img { width: 140px; height: 140px; }
+  .name { font-family: var(--font-serif); font-weight: 500; font-size: 20px; color: var(--fg); margin-bottom: 4px; }
+  .ing { font-size: 12px; color: var(--fg-muted); margin-bottom: 10px; line-height: 1.4; }
+  .row { display: flex; align-items: center; justify-content: space-between; }
+  .price { font-family: var(--font-serif); font-style: italic; font-weight: 600; color: var(--terra-500); font-size: 18px; }
+  .add { width: 36px; height: 36px; border-radius: 999px; border: none; background: var(--terra-500); color: var(--cream-50); font-size: 20px; cursor: pointer; box-shadow: var(--shadow-sm); }
+  .rating { font-size: 11px; color: var(--fg-muted); margin-bottom: 8px; }
+  .star { color: var(--amber, #C68A3E); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="disc"><img src="../assets/illustrations/cake-hero.svg" alt=""/></div>
+  <div class="name">Strawberry Mousse</div>
+  <div class="rating"><span class="star">★★★★★</span> 4.9 · 128 reviews</div>
+  <div class="ing">Strawberry · Fresh cream · French butter</div>
+  <div class="row"><span class="price">$42.00</span><button class="add">+</button></div>
+</div>
+</body>
+</html>

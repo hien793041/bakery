@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="../colors_and_type.css"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  body { padding: 24px; background: var(--bg); font-family: var(--font-sans); }
+  .field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; max-width: 360px; }
+  label { font-size: 12px; font-weight: 600; color: var(--fg); }
+  input, textarea { font-family: var(--font-sans); font-size: 15px; padding: 12px 14px; border-radius: var(--r-md); border: 1px solid var(--hairline); background: var(--cream-50); color: var(--fg); transition: all .18s var(--ease); }
+  input:focus, textarea:focus { outline: none; border-color: var(--terra-500); box-shadow: 0 0 0 3px rgba(184,74,57,.15); }
+  input::placeholder { color: var(--ink-300); }
+  .help { font-size: 11px; color: var(--fg-muted); }
+  .err input { border-color: var(--terra-500); background: var(--pink-50); }
+  .err .help { color: var(--terra-500); }
+</style>
+</head>
+<body>
+<div class="field">
+  <label>Phone number</label>
+  <input type="text" placeholder="(408) 555-0123" />
+  <span class="help">We'll call to confirm before delivery</span>
+</div>
+<div class="field err">
+  <label>Delivery address</label>
+  <input type="text" value="" placeholder="Enter your address..."/>
+  <span class="help">Please add an address so we can pack it for you</span>
+</div>
+</body>
+</html>

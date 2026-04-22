@@ -1,0 +1,258 @@
+/* ============================================================
+   Mira Bánh Ngọt — Design Tokens
+   Import Google Fonts in your HTML <head>:
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:wght@400;500;600;700&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+   ============================================================ */
+
+:root {
+  /* ------- COLOR ------- */
+
+  /* Cream paper — dominant background */
+  --cream-50:  #FEFBF5;
+  --cream-100: #FBF5EC;   /* default page bg */
+  --cream-200: #F5ECD9;
+  --cream-300: #EBDEC3;
+
+  /* Pastel pink family — soft shapes, pills, highlights */
+  --pink-50:  #FEF5F5;
+  --pink-100: #FDECEC;
+  --pink-200: #F9DCDC;   /* signature pill bg */
+  --pink-300: #F4C2C2;   /* hero disc */
+  --pink-400: #EC9E9E;
+  --pink-500: #DD7A7A;
+
+  /* Terracotta / đỏ đất — single strong accent */
+  --terra-300: #D9796A;
+  --terra-400: #CA5A49;
+  --terra-500: #B84A39;   /* prices, CTAs, ribbon */
+  --terra-600: #9A3B2D;
+  --terra-700: #7C2E23;
+
+  /* Ink — warm near-black (never pure #000) */
+  --ink-900: #2B1E1A;
+  --ink-700: #4A3A35;
+  --ink-500: #6B5B55;     /* secondary text */
+  --ink-300: #A89B95;     /* tertiary, placeholder */
+  --ink-200: #D4CBC5;     /* hairlines */
+
+  /* Supporting muted semantics — kept warm/desaturated */
+  --olive: #8A8B5C;       /* "in stock" / success */
+  --slate: #6B7280;       /* neutral info */
+  --amber: #C68A3E;       /* warning / "new" */
+
+  /* Warm hairline tint (10% terra) */
+  --hairline: rgba(184, 74, 57, 0.12);
+
+  /* Semantic color vars */
+  --bg:            var(--cream-100);
+  --bg-elevated:   var(--cream-50);
+  --bg-sunken:     var(--cream-200);
+  --fg:            var(--ink-900);
+  --fg-muted:      var(--ink-500);
+  --fg-subtle:     var(--ink-300);
+  --accent:        var(--terra-500);
+  --accent-hover:  var(--terra-600);
+  --accent-press:  var(--terra-700);
+  --accent-soft:   var(--pink-200);
+  --price:         var(--terra-500);
+  --ribbon-bg:     var(--terra-500);
+  --ribbon-fg:     var(--cream-50);
+  --border:        var(--hairline);
+
+  /* ------- TYPE ------- */
+
+  --font-serif:      'Cormorant Garamond', 'EB Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans:       'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-script:     'Caveat', 'Brush Script MT', cursive;
+  --font-mono:       'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Type scale — mobile-first; override on desktop via media query below */
+  --fs-xs:   12px;
+  --fs-sm:   14px;
+  --fs-base: 16px;
+  --fs-md:   18px;
+  --fs-lg:   22px;
+  --fs-xl:   28px;
+  --fs-2xl:  36px;
+  --fs-3xl:  48px;
+  --fs-4xl:  64px;
+  --fs-5xl:  80px;
+  --fs-display: 96px;
+
+  --lh-tight:  1.1;
+  --lh-snug:   1.25;
+  --lh-normal: 1.5;
+  --lh-loose:  1.7;
+
+  --tracking-tight:  -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.04em;
+  --tracking-caps:   0.12em;
+
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+
+  /* ------- SPACING (4px grid) ------- */
+  --sp-1:   4px;
+  --sp-2:   8px;
+  --sp-3:   12px;
+  --sp-4:   16px;
+  --sp-5:   24px;
+  --sp-6:   32px;
+  --sp-7:   48px;
+  --sp-8:   64px;
+  --sp-9:   96px;
+  --sp-10:  128px;
+
+  /* ------- RADII ------- */
+  --r-sm:   8px;
+  --r-md:   14px;
+  --r-lg:   20px;
+  --r-xl:   28px;
+  --r-full: 999px;
+
+  /* ------- SHADOWS (warm, tinted terra) ------- */
+  --shadow-sm: 0 1px 2px rgba(184, 74, 57, 0.06),
+               0 1px 1px rgba(184, 74, 57, 0.04);
+  --shadow-md: 0 8px 24px rgba(184, 74, 57, 0.08),
+               0 2px 4px rgba(184, 74, 57, 0.04);
+  --shadow-lg: 0 20px 48px rgba(184, 74, 57, 0.12),
+               0 4px 8px rgba(184, 74, 57, 0.06);
+  --shadow-xl: 0 32px 72px rgba(184, 74, 57, 0.16);
+
+  /* ------- MOTION ------- */
+  --ease:           cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-fast:   180ms;
+  --dur-mid:    260ms;
+  --dur-slow:   480ms;
+
+  /* ------- LAYOUT ------- */
+  --max-w:          1200px;
+  --gutter-mobile:  24px;
+  --gutter-desktop: 48px;
+
+  /* ------- FOCUS RING ------- */
+  --ring: 0 0 0 2px var(--bg), 0 0 0 4px var(--terra-500);
+}
+
+/* Desktop type scale bump */
+@media (min-width: 1024px) {
+  :root {
+    --fs-base: 17px;
+    --fs-display: 112px;
+  }
+}
+
+/* ============================================================
+   BASE ELEMENT STYLES
+   ============================================================ */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+  font-feature-settings: 'ss01', 'ss02';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-tight);
+  color: var(--fg);
+  margin: 0;
+  letter-spacing: var(--tracking-tight);
+}
+
+h1 {
+  font-size: var(--fs-4xl);
+  font-style: italic;
+  font-weight: var(--fw-regular);
+}
+
+h2 {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-medium);
+}
+
+h3 {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-medium);
+}
+
+h4 {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+}
+
+p {
+  margin: 0 0 var(--sp-4);
+  line-height: var(--lh-normal);
+  color: var(--fg);
+}
+
+small, .text-sm { font-size: var(--fs-sm); color: var(--fg-muted); }
+.text-xs { font-size: var(--fs-xs); }
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease);
+}
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
+code, pre, .mono {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+/* Utility display classes */
+.display {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-display);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+}
+
+.script {
+  font-family: var(--font-script);
+  font-weight: var(--fw-regular);
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caps);
+  color: var(--accent);
+}
+
+.price {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: var(--fw-semibold);
+  color: var(--price);
+}
+
+*:focus-visible {
+  outline: none;
+  box-shadow: var(--ring);
+  border-radius: var(--r-sm);
+}

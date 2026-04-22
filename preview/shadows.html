@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="../colors_and_type.css"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  body { padding: 36px; background: var(--bg); font-family: var(--font-sans); }
+  .row { display: flex; gap: 40px; align-items: center; justify-content: center; }
+  .card { background: var(--cream-50); width: 120px; height: 80px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; color: var(--fg); }
+  .sm { box-shadow: var(--shadow-sm); }
+  .md { box-shadow: var(--shadow-md); }
+  .lg { box-shadow: var(--shadow-lg); }
+  .xl { box-shadow: var(--shadow-xl); }
+  .label { font-size: 11px; color: var(--fg-muted); text-align: center; margin-top: 10px; font-family: var(--font-mono); }
+  .stop { display: flex; flex-direction: column; align-items: center; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="stop"><div class="card sm">shadow-sm</div><div class="label">hairline lift</div></div>
+  <div class="stop"><div class="card md">shadow-md</div><div class="label">product card</div></div>
+  <div class="stop"><div class="card lg">shadow-lg</div><div class="label">hover / drawer</div></div>
+  <div class="stop"><div class="card xl">shadow-xl</div><div class="label">modal</div></div>
+</div>
+</body>
+</html>

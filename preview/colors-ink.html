@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="../colors_and_type.css"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { padding: 24px; background: var(--bg); }
+  .row { display: flex; gap: 12px; }
+  .swatch { flex: 1; border-radius: var(--r-md); padding: 14px; min-height: 96px; display: flex; flex-direction: column; justify-content: space-between; font-family: var(--font-sans); border: 1px solid var(--hairline); }
+  .name { font-weight: 600; font-size: 13px; }
+  .hex { font-family: var(--font-mono); font-size: 11px; opacity: .75; }
+  .label { font-size: 11px; text-transform: uppercase; letter-spacing: .12em; color: var(--fg-muted); margin-bottom: 4px; font-family: var(--font-sans); }
+</style>
+</head>
+<body>
+<div>
+  <div class="label">Ink · warm near-black (never pure #000)</div>
+  <div class="row">
+    <div class="swatch" style="background:#2B1E1A; color:#FBF5EC"><span class="name">ink-900 · fg</span><span class="hex">#2B1E1A</span></div>
+    <div class="swatch" style="background:#4A3A35; color:#fff"><span class="name">ink-700</span><span class="hex">#4A3A35</span></div>
+    <div class="swatch" style="background:#6B5B55; color:#fff"><span class="name">ink-500 · fg-muted</span><span class="hex">#6B5B55</span></div>
+    <div class="swatch" style="background:#A89B95; color:#2B1E1A"><span class="name">ink-300 · subtle</span><span class="hex">#A89B95</span></div>
+    <div class="swatch" style="background:#D4CBC5; color:#2B1E1A"><span class="name">ink-200 · hairline</span><span class="hex">#D4CBC5</span></div>
+  </div>
+</div>
+</body>
+</html>
